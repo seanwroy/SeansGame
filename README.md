@@ -9,6 +9,8 @@ Feel free to take this code as well as the included assets and do what you wish 
 My current plan for this is to extend the creature class to enemies and come up with some kind of rudimentary AI/pathing system
 for them. 
 
+**This game is work-in-progress and contains no enemies or objective at present.**
+
 ### Installing
 
 If you'd like to run this project, just download the respository and run it through whatever IDE you're using. I'll compile
