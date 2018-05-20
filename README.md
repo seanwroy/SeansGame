@@ -6,34 +6,13 @@ and added my own code on top of it.
 
 Feel free to take this code as well as the included assets and do what you wish with them.
 
+My current plan for this is to extend the creature class to enemies and come up with some kind of rudimentary AI/pathing system
+for them. T
+
 ### Installing
 
 If you'd like to run this project, just download the respository and run it through whatever IDE you're using. I'll compile
 an executable when it's finished.
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
