@@ -7,7 +7,7 @@ and added my own code on top of it.
 Feel free to take this code as well as the included assets and do what you wish with them.
 
 My current plan for this is to extend the creature class to enemies and come up with some kind of rudimentary AI/pathing system
-for them. T
+for them. 
 
 ### Installing
 
