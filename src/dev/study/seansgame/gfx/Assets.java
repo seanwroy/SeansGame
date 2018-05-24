@@ -9,7 +9,7 @@ public class Assets {
 								rock4, rock5, rock6, stump1, stump2, fulltree, house1, house2,
 								house3, house4, house5, house6, house7, house8, house9, house10,
 								house11, house12, house13, house14, house15, house16, house17,
-								house18, house19, house20, boundary1, boundary2, boundary3, stone2;
+								house18, house19, house20, boundary1, boundary2, boundary3, stone2, wood;
 	public static BufferedImage[] player_down, player_up, player_left, player_right, player_still;
 	public static BufferedImage[] enemy_down, enemy_up, enemy_left, enemy_right, enemy_still;
 	public static BufferedImage[] btn_start;
@@ -98,6 +98,7 @@ public class Assets {
 		dirt = sheet.crop(width, 0, width, height);
 		dirt2 = sheet.crop(width, 0, width, height);
 		dirty = sheet.crop(160, 96, width, height);
+		wood = sheet.crop(192, 96, width, height);
 		grass = sheet.crop(width * 2, 0, width, height);
 		stone = sheet.crop(width * 3, 0, width, height);
 		stone2 = sheet.crop(width * 3, 0, width, height);

@@ -16,6 +16,7 @@ import dev.study.seansgame.entities.statics.Rock6;
 import dev.study.seansgame.entities.statics.Stump1;
 import dev.study.seansgame.entities.statics.Stump2;
 import dev.study.seansgame.entities.statics.Tree;
+import dev.study.seansgame.items.ItemManager;
 import dev.study.seansgame.tiles.Tile;
 import dev.study.seansgame.utils.Utils;
 
@@ -26,10 +27,15 @@ public class World {
 	private int[][] tiles;
 	//Entities
 	private EntityManager entityManager;
+	//Item
+	private ItemManager itemManager;
 	
 	public World(Handler handler, String path) {
 		this.handler = handler;
 		entityManager = new EntityManager(handler, new Player(handler, 100, 100));
+		itemManager = new ItemManager(handler);
+		
+		//Temp entity code
 		entityManager.addEntity(new Tree(handler, 120, 150));
 		entityManager.addEntity(new Tree(handler, 320, 620));
 		entityManager.addEntity(new Tree(handler, 520, 50));
@@ -66,6 +72,7 @@ public class World {
 	}
 
 	public void tick() {
+		itemManager.tick();
 		entityManager.tick();
 
 	}
@@ -84,10 +91,29 @@ public class World {
 				
 			}
 		}
+		//Items
+		itemManager.render(g);
+		
 		//Entities
 		entityManager.render(g);
 	}
 	
+	public Handler getHandler() {
+		return handler;
+	}
+
+	public void setHandler(Handler handler) {
+		this.handler = handler;
+	}
+
+	public ItemManager getItemManager() {
+		return itemManager;
+	}
+
+	public void setItemManager(ItemManager itemManager) {
+		this.itemManager = itemManager;
+	}
+
 	public Tile getTile(int x, int y) {
 		if(x < 0 || y < 0 || x >= width || y >= height)
 			return Tile.grassTile;

@@ -4,6 +4,7 @@ import java.awt.Graphics;
 
 import dev.study.seansgame.Handler;
 import dev.study.seansgame.gfx.Assets;
+import dev.study.seansgame.items.Item;
 import dev.study.seansgame.tiles.Tile;
 
 
